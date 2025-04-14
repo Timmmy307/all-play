@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Panel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <h1>Media Control Panel</h1>
+
+    <!-- Login -->
+    <div id="login">
+        <input type="text" id="username" placeholder="Enter username">
+        <button onclick="register()">Log In</button>
+    </div>
+
+    <!-- Media Controls -->
+    <div id="media-controls">
+        <input type="text" id="mediaUrl" placeholder="Enter media URL">
+        <button onclick="playMedia()">Play Media</button>
+    </div>
+</body>
+</html>
